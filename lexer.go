@@ -48,7 +48,7 @@ func (s lineContent) indent() int {
 	return len(s) - len(strings.TrimLeft(string(s), " \t"))
 }
 
-func (l *lexer) tokenise() (lines lexerTree, err error) {
+func (l *lexer) lex() (lines lexerTree, err error) {
 
 	// Split to lines
 	scanner := bufio.NewScanner(l.reader)

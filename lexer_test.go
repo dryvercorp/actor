@@ -91,7 +91,7 @@ Another other line of blurb
 
 	for i, v := range inputs {
 		lex := newLexer(bytes.NewBufferString(v.file))
-		lines, err := lex.tokenise()
+		lines, err := lex.lex()
 		assert.Nil(t, err, fmt.Sprintf("%d: Expected no error", i))
 		compareLexerTrees(t, lines, v.expected_tree, 0)
 	}
@@ -127,7 +127,7 @@ func Test_CanLoadValidActorDefinitionFromFile(t *testing.T) {
 		defer file.Close()
 
 		lex := newLexer(file)
-		lines, err := lex.tokenise()
+		lines, err := lex.lex()
 		assert.Nil(t, err)
 
 		compareLexerTrees(t, lines, v.expected_tree, 0)
