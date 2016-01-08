@@ -110,12 +110,13 @@ func Test_CanLoadValidActorDefinitionFromFile(t *testing.T) {
 				&line{line: 2, column: 0, content: "Actor: Valid actor", children: []*line{
 					&line{line: 3, column: 4, content: "Description and blurb... multi line 1 tab indent"},
 					&line{line: 4, column: 4, content: "Some other line of blurb"},
-					&line{line: 6, column: 4, content: "Goals:", children: []*line{
-						&line{line: 7, column: 8, content: "Goal number 1"},
-						&line{line: 8, column: 8, content: "Goal number 2"},
+					&line{line: 6, column: 4, content: "@tag3 @tag4"},
+					&line{line: 7, column: 4, content: "Goals:", children: []*line{
+						&line{line: 8, column: 8, content: "Goal number 1"},
+						&line{line: 9, column: 8, content: "Goal number 2"},
 					}},
-					&line{line: 10, column: 4, content: "@tag3 @tag4"},
-					&line{line: 11, column: 4, content: "Goal: Goal number 3"},
+					&line{line: 11, column: 4, content: "@tag5 @tag6"},
+					&line{line: 12, column: 4, content: "Goal: Goal number 3"},
 				}},
 			},
 		},
