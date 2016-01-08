@@ -30,7 +30,7 @@ package main
 import "github.com/dryvercorp/actor"
 
 func main() {
-    parser, err1 := actor.NewParserFromFile("my.actor")
+    parser, err1 := actor.NewFileParser("my.actor")
     // handle err1
     
     actor, err2 := parser.Parse()
