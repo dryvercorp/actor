@@ -3,9 +3,10 @@ Actor: Valid actor
     Description and blurb... multi line 1 tab indent
     Some other line of blurb
 
+    @tag3 @tag4
     Goals:
         Goal number 1
         Goal number 2
     
-    @tag3 @tag4
+    @tag5 @tag6
     Goal: Goal number 3
