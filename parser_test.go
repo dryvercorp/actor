@@ -104,30 +104,7 @@ Actor: Some other actor`,
 		assert.Equal(t, input.err, err)
 
 		if input.actor != nil {
-			assert.NotNil(t, input.actor)
-			assert.Equal(t, input.actor.Name, actor.Name)
-
-			// Check general tags
-			assert.Equal(t, len(input.actor.Tags), len(actor.Tags))
-
-			for i := 0; i < len(actor.Tags); i++ {
-				assert.Equal(t, input.actor.Tags[i].Name, actor.Tags[i].Name)
-			}
-
-			// Check blurb
-			assert.Equal(t, input.actor.Blurb, actor.Blurb)
-
-			// Check goals
-			assert.Equal(t, len(input.actor.Goals), len(actor.Goals))
-
-			for i := 0; i < len(actor.Goals); i++ {
-				assert.Equal(t, input.actor.Goals[i].Name, actor.Goals[i].Name)
-				assert.Equal(t, len(input.actor.Goals[i].Tags), len(actor.Goals[i].Tags))
-
-				for j := 0; j < len(input.actor.Goals[i].Tags); j++ {
-					assert.Equal(t, input.actor.Goals[i].Tags[j].Name, actor.Goals[i].Tags[j].Name)
-				}
-			}
+			compareActors(t, input.actor, actor)
 		}
 	}
 }
