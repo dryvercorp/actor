@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/yourheropaul/inj.svg?branch=master)](https://travis-ci.org/dryvercorp/actor) [![Coverage Status](https://coveralls.io/repos/yourheropaul/inj/badge.svg?branch=master&service=github)](https://coveralls.io/github/dryvercorp/actor?branch=master) [![GoDoc](https://godoc.org/github.com/yourheropaul/inj?status.svg)](https://godoc.org/github.com/dryvercorp/actor) 
+[![Build Status](https://travis-ci.org/dryvercorp/actor.svg?branch=master)](https://travis-ci.org/dryvercorp/actor) [![Coverage Status](https://coveralls.io/repos/dryvercorp/actor/badge.svg?branch=master&service=github)](https://coveralls.io/github/dryvercorp/actor?branch=master) [![GoDoc](https://godoc.org/github.com/dryvercorp/actor?status.svg)](https://godoc.org/github.com/dryvercorp/actor) 
 
 # Actor: a Gherkin-like actor file specification for behaviour-driven development
 
